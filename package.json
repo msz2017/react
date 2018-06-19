@@ -1,0 +1,11 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/msz2017/react.git",
+  "author": "shuz <15558057209@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
