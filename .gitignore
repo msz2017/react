@@ -64,3 +64,4 @@ typings/
 # parcel
 .cache/
 dist/
+build/
