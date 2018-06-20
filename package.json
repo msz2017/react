@@ -6,15 +6,19 @@
   "author": "shuz <15558057209@163.com>",
   "license": "MIT",
   "devDependencies": {
+    "@vue/component-compiler-utils": "^2.0.0",
     "babel-preset-react": "^6.24.1",
     "node-sass": "^4.9.0",
     "parcel-bundler": "^1.9.2",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "vue-template-compiler": "^2.5.16"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "vue": "^2.5.16",
+    "vue-hot-reload-api": "^2.3.0"
   },
   "scripts": {
     "build": "npm run clean && parcel build index.html -d build",
