@@ -1,19 +1,17 @@
 import './assets/styles/app.scss'
 import logo from './assets/images/logo.svg'
 import "babel-polyfill";
-import React from "react";
-import ReactDOM from "react-dom";
-
-
-class HelloMessage extends React.Component {
-    render() {
-        return (
-            <div>
-                <div><img src={logo} /></div>
-                <div> Hello {this.props.name}</div>
-            </div>)
-    }
-}
 
 var mountNode = document.getElementById("app");
-ReactDOM.render(<HelloMessage name="Jane" />, mountNode);
+
+import preact from 'preact';
+
+import { h, render } from 'preact';
+
+render((
+    <div className="a">
+        <img src={logo}/>
+        <span>Hello, world!</span>
+        <button onClick={e => alert("hi!")}>Click Me</button>
+    </div>
+), mountNode, mountNode.firstElementChild);
